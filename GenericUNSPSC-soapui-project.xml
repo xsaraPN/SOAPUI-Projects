@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5d1b8f99-c03c-496c-92a5-ce16f1c8c115" activeEnvironment="Default environment" name="GenericUNSPSC" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="GenericUNSPSCSoap12 TestSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value="TestSuite Report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="c3b21001-0659-44af-95d1-987c9afc736a" wsaVersion="NONE" name="GenericUNSPSCSoap12" type="wsdl" bindingName="{http://www.webservicex.net/}GenericUNSPSCSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.webservicex.net/GenericUNSPSC.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint></con:endpoints><con:operation id="31c071ca-8a0a-4ab2-a770-ee5ce04ddcef" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCByCommodityByTitle" name="GetUNSPSCByCommodityByTitle" bindingOperationName="GetUNSPSCByCommodityByTitle" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1aa9b561-3ff9-42da-9792-7a37e1e44c9c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetUNSPSCByCommodityByTitle>\r
+         <!--Optional:-->\r
+         <web:CommodityTitle>?</web:CommodityTitle>\r
+      </web:GetUNSPSCByCommodityByTitle>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCByCommodityByTitleRequest"/></con:call></con:operation><con:operation id="550a5982-e070-4938-a33b-38def65e28ad" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCClassByFamily" name="GetUNSPSCClassByFamily" bindingOperationName="GetUNSPSCClassByFamily" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f28ea473-08de-4136-8536-9e1d4fece56f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetUNSPSCClassByFamily>\r
+         <!--Optional:-->\r
+         <web:Family>?</web:Family>\r
+      </web:GetUNSPSCClassByFamily>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCClassByFamilyRequest"/></con:call></con:operation><con:operation id="022260ee-2691-4532-a95a-b364bdf61bc2" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCCommodityByClass" name="GetUNSPSCCommodityByClass" bindingOperationName="GetUNSPSCCommodityByClass" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="076a25d6-69b6-4351-863f-2089522ca47d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetUNSPSCCommodityByClass>\r
+         <!--Optional:-->\r
+         <web:Class>?</web:Class>\r
+      </web:GetUNSPSCCommodityByClass>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCCommodityByClassRequest"/></con:call></con:operation><con:operation id="2ebe5b14-302d-4ad1-ab88-a4e11e76121c" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCFamilyBySegment" name="GetUNSPSCFamilyBySegment" bindingOperationName="GetUNSPSCFamilyBySegment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831e4e45-f063-4c2a-8d22-854eafb6c592" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetUNSPSCFamilyBySegment>\r
+         <!--Optional:-->\r
+         <web:Segment>?</web:Segment>\r
+      </web:GetUNSPSCFamilyBySegment>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCFamilyBySegmentRequest"/></con:call></con:operation><con:operation id="d383094a-b777-4bb3-96a7-172a7d698e0d" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCSegments" name="GetUNSPSCSegments" bindingOperationName="GetUNSPSCSegments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0b9932cd-6771-48da-b85d-48608948b66a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetUNSPSCSegments/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCSegmentsRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="69d38ac7-b11c-460d-92ea-e3decfe522e6" wsaVersion="NONE" name="GenericUNSPSCSoap" type="wsdl" bindingName="{http://www.webservicex.net/}GenericUNSPSCSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/GenericUNSPSC.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.webservicex.net/GenericUNSPSC.asmx?WSDL"><con:part><con:url>http://www.webservicex.net/GenericUNSPSC.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webservicex.net/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webservicex.net/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>The United Nations Standard Products and Services Code® (UNSPSC®) provides an open, global multi-sector standard for efficient, accurate classification of products and services. Search the code on this website to locate commodity codes that can be used by your company. The UNSPSC offers a single global classification system that can be used for: Company-wide visibility of spend analysis,Cost-effective procurement optimization,	Full exploitation of electronic commerce capabilities</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webservicex.net/">
+      <s:element name="GetUNSPSCSegments">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetUNSPSCSegmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUNSPSCSegmentsResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UNSPSCSegmentData" type="tns:UNSPSCSegmentList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UNSPSCSegmentList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Records" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="UNSPSCSegmenData" type="tns:ArrayOfUNSPSCSegment"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUNSPSCSegment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UNSPSCSegment" type="tns:UNSPSCSegment"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UNSPSCSegment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Segment" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="SegmentTitle" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUNSPSCFamilyBySegment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Segment" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUNSPSCFamilyBySegmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUNSPSCFamilyBySegmentResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UNSPSCFamilyData" type="tns:UNSPSCFamilyList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UNSPSCFamilyList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Records" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="UNSPSCFamilyData" type="tns:ArrayOfUNSPSCFamily"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUNSPSCFamily">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UNSPSCFamily" type="tns:UNSPSCFamily"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UNSPSCFamily">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Family" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FamilyTitle" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUNSPSCClassByFamily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Family" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUNSPSCClassByFamilyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUNSPSCClassByFamilyResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UNSPSCClassData" type="tns:UNSPSCClassList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UNSPSCClassList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Records" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="UNSPSCClassData" type="tns:ArrayOfUNSPSCClass"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUNSPSCClass">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UNSPSCClass" type="tns:UNSPSCClass"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UNSPSCClass">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Class" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ClassTitle" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUNSPSCCommodityByClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Class" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUNSPSCCommodityByClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUNSPSCCommodityByClassResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UNSPSCCommodityData" type="tns:UNSPSCCommodityList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UNSPSCCommodityList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Records" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="UNSPSCCommodityData" type="tns:ArrayOfUNSPSCCommodity"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUNSPSCCommodity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UNSPSCCommodity" type="tns:UNSPSCCommodity"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UNSPSCCommodity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Commodity" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CommodityTitle" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUNSPSCByCommodityByTitle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CommodityTitle" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUNSPSCByCommodityByTitleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUNSPSCByCommodityByTitleResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UNSPSCCommodityData" type="tns:UNSPSCCommodityList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUNSPSCSegmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCSegments"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCSegmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCSegmentsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCFamilyBySegmentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCFamilyBySegment"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCFamilyBySegmentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCFamilyBySegmentResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCClassByFamilySoapIn">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCClassByFamily"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCClassByFamilySoapOut">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCClassByFamilyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCCommodityByClassSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCCommodityByClass"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCCommodityByClassSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCCommodityByClassResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCByCommodityByTitleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCByCommodityByTitle"/>
+  </wsdl:message>
+  <wsdl:message name="GetUNSPSCByCommodityByTitleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUNSPSCByCommodityByTitleResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="GenericUNSPSCSoap">
+    <wsdl:operation name="GetUNSPSCSegments">
+      <wsdl:documentation>Get UNSPSC Segment details</wsdl:documentation>
+      <wsdl:input message="tns:GetUNSPSCSegmentsSoapIn"/>
+      <wsdl:output message="tns:GetUNSPSCSegmentsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCFamilyBySegment">
+      <wsdl:documentation>Get UNSPSC Family details by Segment</wsdl:documentation>
+      <wsdl:input message="tns:GetUNSPSCFamilyBySegmentSoapIn"/>
+      <wsdl:output message="tns:GetUNSPSCFamilyBySegmentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCClassByFamily">
+      <wsdl:documentation>Get UNSPSC Family details by Family</wsdl:documentation>
+      <wsdl:input message="tns:GetUNSPSCClassByFamilySoapIn"/>
+      <wsdl:output message="tns:GetUNSPSCClassByFamilySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCCommodityByClass">
+      <wsdl:documentation>Get UNSPSC Commodity details by Class</wsdl:documentation>
+      <wsdl:input message="tns:GetUNSPSCCommodityByClassSoapIn"/>
+      <wsdl:output message="tns:GetUNSPSCCommodityByClassSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCByCommodityByTitle">
+      <wsdl:documentation>Get UNSPSC Commodity details by Commodity Title</wsdl:documentation>
+      <wsdl:input message="tns:GetUNSPSCByCommodityByTitleSoapIn"/>
+      <wsdl:output message="tns:GetUNSPSCByCommodityByTitleSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GenericUNSPSCHttpGet"/>
+  <wsdl:portType name="GenericUNSPSCHttpPost"/>
+  <wsdl:binding name="GenericUNSPSCSoap" type="tns:GenericUNSPSCSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetUNSPSCSegments">
+      <soap:operation soapAction="http://www.webservicex.net/GetUNSPSCSegments" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCFamilyBySegment">
+      <soap:operation soapAction="http://www.webservicex.net/GetUNSPSCFamilyBySegment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCClassByFamily">
+      <soap:operation soapAction="http://www.webservicex.net/GetUNSPSCClassByFamily" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCCommodityByClass">
+      <soap:operation soapAction="http://www.webservicex.net/GetUNSPSCCommodityByClass" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCByCommodityByTitle">
+      <soap:operation soapAction="http://www.webservicex.net/GetUNSPSCByCommodityByTitle" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenericUNSPSCSoap12" type="tns:GenericUNSPSCSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetUNSPSCSegments">
+      <soap12:operation soapAction="http://www.webservicex.net/GetUNSPSCSegments" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCFamilyBySegment">
+      <soap12:operation soapAction="http://www.webservicex.net/GetUNSPSCFamilyBySegment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCClassByFamily">
+      <soap12:operation soapAction="http://www.webservicex.net/GetUNSPSCClassByFamily" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCCommodityByClass">
+      <soap12:operation soapAction="http://www.webservicex.net/GetUNSPSCCommodityByClass" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUNSPSCByCommodityByTitle">
+      <soap12:operation soapAction="http://www.webservicex.net/GetUNSPSCByCommodityByTitle" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenericUNSPSCHttpGet" type="tns:GenericUNSPSCHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="GenericUNSPSCHttpPost" type="tns:GenericUNSPSCHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="GenericUNSPSC">
+    <wsdl:documentation>The United Nations Standard Products and Services Code® (UNSPSC®) provides an open, global multi-sector standard for efficient, accurate classification of products and services. Search the code on this website to locate commodity codes that can be used by your company. The UNSPSC offers a single global classification system that can be used for: Company-wide visibility of spend analysis,Cost-effective procurement optimization,	Full exploitation of electronic commerce capabilities</wsdl:documentation>
+    <wsdl:port name="GenericUNSPSCSoap" binding="tns:GenericUNSPSCSoap">
+      <soap:address location="http://www.webservicex.net/GenericUNSPSC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="GenericUNSPSCSoap12" binding="tns:GenericUNSPSCSoap12">
+      <soap12:address location="http://www.webservicex.net/GenericUNSPSC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="GenericUNSPSCHttpGet" binding="tns:GenericUNSPSCHttpGet">
+      <http:address location="http://www.webservicex.net/GenericUNSPSC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="GenericUNSPSCHttpPost" binding="tns:GenericUNSPSCHttpPost">
+      <http:address location="http://www.webservicex.net/GenericUNSPSC.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint></con:endpoints><con:operation id="d6aec36e-310c-44ff-958a-aaf321f0b984" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCByCommodityByTitle" name="GetUNSPSCByCommodityByTitle" bindingOperationName="GetUNSPSCByCommodityByTitle" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7666df8b-081e-42dd-879b-8e9da42f3b41" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCByCommodityByTitle>\r
+         <!--Optional:-->\r
+         <web:CommodityTitle>?</web:CommodityTitle>\r
+      </web:GetUNSPSCByCommodityByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetUNSPSCByCommodityByTitle"/></con:call></con:operation><con:operation id="5c968e1e-16ad-498b-9630-380581c15965" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCClassByFamily" name="GetUNSPSCClassByFamily" bindingOperationName="GetUNSPSCClassByFamily" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dea3411b-dbf1-4b00-8de7-afad1ecbe0bb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCClassByFamily>\r
+         <!--Optional:-->\r
+         <web:Family>?</web:Family>\r
+      </web:GetUNSPSCClassByFamily>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetUNSPSCClassByFamily"/></con:call></con:operation><con:operation id="e9d32860-9fc2-49cc-9271-948d8c74d78f" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCCommodityByClass" name="GetUNSPSCCommodityByClass" bindingOperationName="GetUNSPSCCommodityByClass" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="148bef2b-4cb5-4bde-9be8-01e9c1240f2d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCCommodityByClass>\r
+         <!--Optional:-->\r
+         <web:Class>?</web:Class>\r
+      </web:GetUNSPSCCommodityByClass>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetUNSPSCCommodityByClass"/></con:call></con:operation><con:operation id="6c73c754-444d-4d39-9ffe-e253343df8ea" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCFamilyBySegment" name="GetUNSPSCFamilyBySegment" bindingOperationName="GetUNSPSCFamilyBySegment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="35c5fe7a-89f1-4331-8904-1c12605a2e41" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCFamilyBySegment>\r
+         <!--Optional:-->\r
+         <web:Segment>?</web:Segment>\r
+      </web:GetUNSPSCFamilyBySegment>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetUNSPSCFamilyBySegment"/></con:call></con:operation><con:operation id="f32d49ba-b749-4c81-84b7-943d29163be4" isOneWay="false" action="http://www.webservicex.net/GetUNSPSCSegments" name="GetUNSPSCSegments" bindingOperationName="GetUNSPSCSegments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="09ffff67-a85e-4e53-85fc-788e34a54181" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCSegments/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetUNSPSCSegments"/></con:call></con:operation></con:interface><con:testSuite id="8489f05c-f1be-4761-a049-bb7d01d8735d" name="GenericUNSPSCSoap12 TestSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="a9e964a0-5245-4efe-8949-dbd1e2bde520" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCSegments TestCase" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="415ba52b-f9e4-4f0a-9437-ec22b5cad610" name="GetUNSPSCSegments"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap12</con:interface><con:operation>GetUNSPSCSegments</con:operation><con:request name="GetUNSPSCSegments" id="d4ca877e-5af8-4908-8a26-14f04a0c95cc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetUNSPSCSegments/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="Valid HTTP Status Codes" id="deadf1ee-ef82-4e9a-bcec-e07faeefeb4d" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="0ae3ebe8-4c69-4654-afe9-97d5e23c056f" name="Response SLA"><con:configuration><SLA>400</SLA></con:configuration></con:assertion><con:assertion type="SOAP Response" id="922cad7f-c532-4fa1-919b-42780d62c4b6" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCSegmentsRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer" id="475bf062-ecf9-449e-90d4-e63f162e2f76"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" entitize="false" transferToAll="false" ignoreEmpty="false" transferChildNodes="false"><con:name>Segment</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetUNSPSCSegments</con:sourceStep><con:sourcePath>declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetUNSPSCSegmentsResponse[1]/ns1:UNSPSCSegmentData[1]/ns1:UNSPSCSegmenData[1]/ns1:UNSPSCSegment[1]/ns1:Segment[1]</con:sourcePath><con:targetType>SegmentValuesLivePLant</con:targetType><con:targetStep>GetUNSPSCSegmentValues</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="GetUNSPSCSegmentValues" id="ae5e3e97-8fa1-4aca-91fd-13618f512bd2"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SegmentValuesLivePLant</con:name><con:value>10000000</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="26123da2-1ed0-4a2f-b40b-480018f9231a" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCFamilyBySegment TestCase" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="4b710e8b-d86b-405e-97ed-fbedcbf5dbd6" name="GetUNSPSCFamilyBySegment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap12</con:interface><con:operation>GetUNSPSCFamilyBySegment</con:operation><con:request name="GetUNSPSCFamilyBySegment" id="db9a8478-e6cc-4fd0-8730-b3091f3ddd48"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetUNSPSCFamilyBySegment>
+         <!--Optional:-->
+         
+      <web:Segment>${#[GenericUNSPSCSoap12 TestSuite#GetUNSPSCSegments TestCase#GetUNSPSCSegmentValues]#SegmentValuesLivePLant}</web:Segment></web:GetUNSPSCFamilyBySegment>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="Valid HTTP Status Codes" id="7ff4e11a-5f79-4be8-bc2c-590db13be1d3" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="9503e8c9-a8d3-4326-af7f-bfa3db7d78c9" name="Response SLA"><con:configuration><SLA>210</SLA></con:configuration></con:assertion><con:assertion type="SOAP Response" id="8ad48ff7-ac9e-4ab1-b861-af4f94eb7182" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCFamilyBySegmentRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer" id="ce447a63-fa8b-4849-9fab-54b8630ab702"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>Family</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetUNSPSCFamilyBySegment</con:sourceStep><con:sourcePath>declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetUNSPSCFamilyBySegmentResponse[1]/ns1:UNSPSCFamilyData[1]/ns1:UNSPSCFamilyData[1]/ns1:UNSPSCFamily[1]/ns1:Family[1]</con:sourcePath><con:targetType>FamilyValueLiveAnimals</con:targetType><con:targetStep>GetFamilyValues</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="GetFamilyValues" id="d1afe895-b770-4c7b-ac03-e6e642b10533"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>FamilyValueLiveAnimals</con:name><con:value>10100000</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="c193109f-4e22-44f3-90bf-3ae9f8248bd4" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCClassByFamily TestCase" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="a94a6c43-ec94-4390-ba76-0ba38d816278" name="GetUNSPSCClassByFamily"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap12</con:interface><con:operation>GetUNSPSCClassByFamily</con:operation><con:request name="GetUNSPSCClassByFamily" id="4199105b-7a6b-4d98-9116-bc26b1257b48"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetUNSPSCClassByFamily>
+         <!--Optional:-->
+         <web:Family>${#[GenericUNSPSCSoap12 TestSuite#GetUNSPSCFamilyBySegment TestCase#GetFamilyValues]#FamilyValueLiveAnimals}</web:Family>
+      </web:GetUNSPSCClassByFamily>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="Valid HTTP Status Codes" id="11c8e2e5-2d48-4ac1-99d8-6fc2484ea634" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="3b21e4d8-a785-468d-9fdf-e9b6527dc29f" name="Response SLA"><con:configuration><SLA>330</SLA></con:configuration></con:assertion><con:assertion type="SOAP Response" id="e906c3f2-632d-49ff-97ca-373e798df6bc" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCClassByFamilyRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer" id="771415cc-5bf8-483f-ada3-463f27e620da"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>Class</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetUNSPSCClassByFamily</con:sourceStep><con:sourcePath>declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetUNSPSCClassByFamilyResponse[1]/ns1:UNSPSCClassData[1]/ns1:UNSPSCClassData[1]/ns1:UNSPSCClass[1]/ns1:Class[1]</con:sourcePath><con:targetType>ClassValueLivestock</con:targetType><con:targetStep>GetClassValues</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="GetClassValues" id="5f81c6a6-78c3-4f4f-94ae-9bfa9de78e2a"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>ClassValueLivestock</con:name><con:value>10101500</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="35285b8c-548d-4736-b11c-dcbe49543b3a" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCCommodityByClass TestCase" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="a5c845b2-f323-4fff-b85e-bef96d2b16ce" name="GetUNSPSCCommodityByClass"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap12</con:interface><con:operation>GetUNSPSCCommodityByClass</con:operation><con:request name="GetUNSPSCCommodityByClass" id="39e99bad-6ebc-4971-a0d4-9cfa4b62ebd4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetUNSPSCCommodityByClass>
+         <!--Optional:-->
+         <web:Class>${#[GenericUNSPSCSoap12 TestSuite#GetUNSPSCClassByFamily TestCase#GetClassValues]#ClassValueLivestock}</web:Class>
+      </web:GetUNSPSCCommodityByClass>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="Valid HTTP Status Codes" id="1af97638-b7f9-4a07-9203-fc992d94e5d1" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="a630f698-080f-4a18-8fcd-9251b770ff91" name="Response SLA"><con:configuration><SLA>300</SLA></con:configuration></con:assertion><con:assertion type="SOAP Response" id="174cc995-bfd0-481d-9a9c-31f05bafe3d8" name="SOAP Response"/><con:assertion type="XPath Match" id="81120191-1228-4fb5-89c7-775752ec6934" name="AllCommodityRecords"><con:configuration><path>declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetUNSPSCCommodityByClassResponse[1]/ns1:UNSPSCCommodityData[1]/ns1:Records[1]/text()</path><content>16</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="9f08d469-3e71-4968-849f-02758886124d" name="AllUNSPSCCommodities"><con:configuration><path>declare namespace ns1='http://www.webservicex.net/';
+count( //ns1:GetUNSPSCCommodityByClassResponse/ns1:UNSPSCCommodityData/ns1:UNSPSCCommodityData/ns1:UNSPSCCommodity)</path><content>16</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="3d093f36-09ac-4b47-a486-7426e8aa89d4" name="Contains(Cats)"><con:configuration><token>Cats</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="8fb96113-a16d-42db-a518-1f72216eec1d" name="Contains(Dogs)"><con:configuration><token>Dogs</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f4aa8d85-00df-4879-91ae-ef35cd48fe89" name="Contains(Goats)"><con:configuration><token>Goats</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="a5895458-e73b-4a78-a373-548fc201d22d" name="Contains(Camels)"><con:configuration><token>Camels</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="766e178c-b163-4240-85d0-991e9dd048f8" name="Contains(Primates)"><con:configuration><token>Primates</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="cca4ab92-1a1f-4650-a8db-738c5358faef" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:originalMessage><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetUNSPSCCommodityByClassResponse xmlns="http://www.webservicex.net/">
+         <GetUNSPSCCommodityByClassResult>true</GetUNSPSCCommodityByClassResult>
+         <UNSPSCCommodityData>
+            <Records>16</Records>
+            <UNSPSCCommodityData>
+               <UNSPSCCommodity>
+                  <Commodity>10101501</Commodity>
+                  <CommodityTitle>Cats</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101502</Commodity>
+                  <CommodityTitle>Dogs</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101504</Commodity>
+                  <CommodityTitle>Mink</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101505</Commodity>
+                  <CommodityTitle>Rats</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101506</Commodity>
+                  <CommodityTitle>Horses</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101507</Commodity>
+                  <CommodityTitle>Sheep</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101508</Commodity>
+                  <CommodityTitle>Goats</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101509</Commodity>
+                  <CommodityTitle>Asses</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101510</Commodity>
+                  <CommodityTitle>Mice</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101511</Commodity>
+                  <CommodityTitle>Swine</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101512</Commodity>
+                  <CommodityTitle>Rabbits</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101513</Commodity>
+                  <CommodityTitle>Guinea pigs</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101514</Commodity>
+                  <CommodityTitle>Primates</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101515</Commodity>
+                  <CommodityTitle>Armadillos</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101516</Commodity>
+                  <CommodityTitle>Cattle</CommodityTitle>
+               </UNSPSCCommodity>
+               <UNSPSCCommodity>
+                  <Commodity>10101517</Commodity>
+                  <CommodityTitle>Camels</CommodityTitle>
+               </UNSPSCCommodity>
+            </UNSPSCCommodityData>
+         </UNSPSCCommodityData>
+      </GetUNSPSCCommodityByClassResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="XPath Match" id="57f893f6-2a65-4745-be6b-46f29cc0dd20" name="XPath Match"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCCommodityByClassRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer" id="175925f1-0f4d-40b7-bf89-cd0a1daecaf0"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>CommodityTitle</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetUNSPSCCommodityByClass</con:sourceStep><con:sourcePath>declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetUNSPSCCommodityByClassResponse[1]/ns1:UNSPSCCommodityData[1]/ns1:UNSPSCCommodityData[1]/ns1:UNSPSCCommodity[1]/ns1:CommodityTitle[1]</con:sourcePath><con:targetType>CommodityTitleCats</con:targetType><con:targetStep>GetCommodityTitles</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="GetCommodityTitles" id="66124ad5-294e-4fff-85ec-ac3137f909cd"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>CommodityTitleCats</con:name><con:value>Cats</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="954e20af-07d9-4bc2-b97b-8209c34efbba" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCByCommodityByTitle TestCase" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="72316a98-902f-4106-8a19-0bfb310051b4" name="GetUNSPSCByCommodityByTitle"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap12</con:interface><con:operation>GetUNSPSCByCommodityByTitle</con:operation><con:request name="GetUNSPSCByCommodityByTitle" id="4a09c69e-bc39-4a02-9754-9fd06677bccc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetUNSPSCByCommodityByTitle>
+         <!--Optional:-->
+         <web:CommodityTitle>${#[GenericUNSPSCSoap12 TestSuite#GetUNSPSCCommodityByClass TestCase#GetCommodityTitles]#CommodityTitleCats}</web:CommodityTitle>
+      </web:GetUNSPSCByCommodityByTitle>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="Valid HTTP Status Codes" id="6ba59554-f7ed-4180-aaed-7615dc4a603d" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f196f00d-30ec-41e5-afa7-ca8b7e87c11e" name="Response SLA"><con:configuration><SLA>300</SLA></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6a995126-8549-43a7-b723-15af3b4ff65d" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.webservicex.net/GenericUNSPSCSoap/GetUNSPSCByCommodityByTitleRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="62d5a914-050a-4f05-8979-0c18ab4ecb8d" name="GenericUNSPSCSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6e4296ad-b923-4cce-907d-ca606561c596" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCByCommodityByTitle TestCase" searchProperties="true" timeout="0"><con:settings/><con:testStep type="request" id="85ea6f3e-5bcc-4386-85ec-14c787533b32" name="GetUNSPSCByCommodityByTitle"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap</con:interface><con:operation>GetUNSPSCByCommodityByTitle</con:operation><con:request name="GetUNSPSCByCommodityByTitle" id="69c58251-8d31-42b3-9248-0406205b8775"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCByCommodityByTitle>\r
+         <!--Optional:-->\r
+         <web:CommodityTitle>?</web:CommodityTitle>\r
+      </web:GetUNSPSCByCommodityByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.webservicex.net/GetUNSPSCByCommodityByTitle"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="eddba493-9173-4f61-aa35-6dd5c4803857" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCClassByFamily TestCase" searchProperties="true" timeout="0"><con:settings/><con:testStep type="request" id="7c890b41-6129-498d-b762-cd9d590290d6" name="GetUNSPSCClassByFamily"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap</con:interface><con:operation>GetUNSPSCClassByFamily</con:operation><con:request name="GetUNSPSCClassByFamily" id="e4d4e45f-e536-4149-89a3-c209ea9bad15"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCClassByFamily>\r
+         <!--Optional:-->\r
+         <web:Family>?</web:Family>\r
+      </web:GetUNSPSCClassByFamily>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.webservicex.net/GetUNSPSCClassByFamily"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="e6387010-f59e-44f3-8a7b-9dd6a61f296b" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCCommodityByClass TestCase" searchProperties="true" timeout="0"><con:settings/><con:testStep type="request" id="441b4114-f8ae-4f99-a73c-610d84038d1e" name="GetUNSPSCCommodityByClass"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap</con:interface><con:operation>GetUNSPSCCommodityByClass</con:operation><con:request name="GetUNSPSCCommodityByClass" id="cbb5bd08-6b7e-4b0c-b377-fffade4153bf"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCCommodityByClass>\r
+         <!--Optional:-->\r
+         <web:Class>?</web:Class>\r
+      </web:GetUNSPSCCommodityByClass>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.webservicex.net/GetUNSPSCCommodityByClass"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="ca416087-0957-443f-821e-9b9f3bb035ea" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCFamilyBySegment TestCase" searchProperties="true" timeout="0"><con:settings/><con:testStep type="request" id="94e2f807-6e50-47eb-926a-c16aca9ec182" name="GetUNSPSCFamilyBySegment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap</con:interface><con:operation>GetUNSPSCFamilyBySegment</con:operation><con:request name="GetUNSPSCFamilyBySegment" id="f78941e2-e317-4bbe-afd7-b954f0a1a721"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCFamilyBySegment>\r
+         <!--Optional:-->\r
+         <web:Segment>?</web:Segment>\r
+      </web:GetUNSPSCFamilyBySegment>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.webservicex.net/GetUNSPSCFamilyBySegment"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="a6289ae5-eac3-45b7-a281-09b7e299ceeb" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUNSPSCSegments TestCase" searchProperties="true" timeout="0"><con:settings/><con:testStep type="request" id="27c0d6e1-3b15-4991-92e8-8f5fe43bf11a" name="GetUNSPSCSegments"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GenericUNSPSCSoap</con:interface><con:operation>GetUNSPSCSegments</con:operation><con:request name="GetUNSPSCSegments" id="a5585358-2aad-4415-b999-78da6c9647f1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/GenericUNSPSC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetUNSPSCSegments/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.webservicex.net/GetUNSPSCSegments"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:authRepository/><con:tags/></con:soapui-project>
